@@ -1,0 +1,159 @@
+:root {
+    --main-font: sans-serif;
+    --font-size: 16px;
+    --main-color: #f7df1e;
+    --second-color: #222;
+    --main-modal-color: rgba(247, 222, 30, 0.85);
+    --second-modal-color: rgba(34, 34, 34, 0.85);
+    --container-width: 1366px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+.header {
+   position: sticky;
+   z-index: 997;
+   top: 0;
+   padding: 1rem;
+   background-color: var(--main-color);
+   color: var(--second-color);
+}
+.header h3 {
+   margin: 0 auto;
+   text-align: center;
+   font-family: monospace;
+}
+
+.footer {
+  position: sticky;                              /* Position the footer at the bottom of the page */
+  left: 0;                                       /* Position the footer at the bottom of the page */ 
+  bottom: 0;
+  padding: 0.5rem;                               /* Some padding */
+  background-color: var(--main-color);           /* Grey background color */
+  color: var(--second-color);
+  text-align: center;
+  font-family: monospace;
+  z-index: 997;
+}
+  
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: scroll;
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#reloj{
+    background-color: rgb(226, 205, 43);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.alarma{
+    text-align: center;
+}
+
+/* estilo colicion */
+.stage {
+    display: flex;
+    min-height: 50vh;
+    background-color: black;
+}
+  
+.ball {
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+/* Estilos Boton Dark Theme */
+.dark-theme-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    left: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    transition: all 0.3s ease-out;
+}
+  
+.dark-theme-btn:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+  
+.dark-mode {
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+
+/* Filtro de Busqueda */
+
+#seccion-tittle{
+   font-family: monospace;
+   font-size: var(--main-font);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  transition: all 0.3s ease-out;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card figcaption {
+  padding: 1rem;
+font-family: monospace;
+}
+
+.filter {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+.section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  text-align: center;
+
+}
