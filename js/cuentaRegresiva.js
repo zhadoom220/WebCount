@@ -11,7 +11,7 @@ d.addEventListener('DOMContentLoaded', (e) => { // Cuando el DOM esté listo
    //search('.card-filter', '.card');
 
    //objetivo de fecha
-   const DATE_TARGET = new Date('10/16/2022 2:59 AM'); //Fecha de objetivo en formato Date
+   const DATE_TARGET = new Date('21/06/2022 0:00 AM'); //Fecha de objetivo en formato Date
 
    let tempo; //Variable para el intervalo de tiempo de la cuenta regresiva 
    
